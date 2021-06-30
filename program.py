@@ -36,5 +36,5 @@ while True:
                 break
         else:
             print("Invalid input, please try again.")
-    except FileNotFoundError:
-        print("File not found, please try again.")
+    except FileNotFoundError as errmsg:
+        print(f"{errmsg}: File not found, please try again.")
