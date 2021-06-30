@@ -21,6 +21,7 @@ class FileOpen:
         try:
             with open(f"{filename}.txt", "a") as file:
                 file.write("\n" + file_text)
+                file.close()
                 return "Your text has been added"
 
         except FileNotFoundError as errmsg:
